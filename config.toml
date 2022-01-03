@@ -1,0 +1,119 @@
+DefaultContentLanguage = "en"
+baseURL = "https://example.com"
+enableEmoji = true
+enableRobotsTXT = true
+languageCode = "en"
+summarylength = 10
+title = "Andrew Schneider"
+theme = "anatole"
+
+# Enable Disqus
+# disqusShortname = ""
+
+# Google Analytics
+# googleAnalytics = ""
+
+# Syntax highlighting
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+
+[params]
+author = "andrew schneider"
+title = "Andrew Schneider"
+# copyright = "2022-2023"
+description = "Making, Tinkering, and Studying"
+favicon = "favicons/"
+keywords = ""
+profilePicture = "images/profile.jpg"
+# example ["css/custom.css"]
+customCss = []
+# example ["js/custom.js"]
+customJs = [] 
+doNotLoadAnimations = false
+images = ["images/site-feature-image.png"]
+mainSections = [""]
+# Form Spree Contact Form
+# Google Site Verify
+# googleSiteVerify = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+# indexDateFormat = "Mon, Jan 2, 2006"
+listDateFormat = "Jan, 2006"
+# singleDateFormat = "Mon, Jan 2, 2006"
+# Commento Comments
+# CommentoURL = "https://commento.example.com/js/commento.js"
+disableThemeSwitcher = true
+displayMode = "nord-dark"
+
+[params.simpleAnalytics]
+# enable = true
+# customurl = "https://analytics.example.com"
+
+## Math settings
+[params.math]
+enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+use = "katex"  # options: "katex", "mathjax". default is "katex".
+
+## Social links
+# use 'fab' when brand icons, use 'fas' when standard solid icons.
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/andrew-schneider/"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/Andrew-Schneider"
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:aschneiderb4@gmail.com"
+
+## Menu items
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 300
+  identifier = "about"
+  url = "/about/"
+
+  [[menu.main]]
+  name = "Contact"
+  weight = 400
+  identifier = "contact"
+  url = "/contact/"
+
+# Deployment
+[deployment]
+
+[[deployment.targets]]
+name = "andrew-schneider.com"
+URL = "s3://http://andrew-schneider.com.s3-website-us-east-1.amazonaws.com"
+
+# If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
+cloudFrontDistributionID =	"<your cloud fornt ID>"
+
+[[deployment.matchers]]
+# Cache static assets for 20 years.
+pattern = "^.+\\.(js|css|png|jpg|gif|svg|ttf)$"
+cacheControl = "max-age=630720000, no-transform, public"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(html|xml|json)$"
+gzip = true

@@ -1,0 +1,9 @@
+{{- $id := .Get "id" | default (.Get 0) -}}
+{{- $type := .Get "type" | default (.Get 1) -}}
+
+<div class="center"> 
+<div id ="{{$id}}"></div>
+</div>
+<script type="module">
+photo_function("{{$id}}","{{$id}}","{{$type}}")
+</script>

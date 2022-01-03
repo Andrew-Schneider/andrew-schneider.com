@@ -1,0 +1,38 @@
+# This is a basic workflow to help you get started with Actions
+
+name: deploy
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+
+
+  build:
+    name: Build and Deploy
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+
+
+          # Sets up Hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.76.5'
+        
+      - name: Build
+        run: hugo --minify --verbose
+        
+      - name: Deploy to S3
+        if: github.ref == 'refs/heads/master'
+        run: hugo deploy -v --force --maxDeletes -1 --invalidateCDN 
+        env:
+          AWS_ACCESS_KEY_ID: ${{AWSACCESS}}
+          AWS_SECRET_ACCESS_KEY: ${{AWSSECRET}}

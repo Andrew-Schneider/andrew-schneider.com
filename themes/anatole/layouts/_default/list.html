@@ -1,0 +1,25 @@
+{{ define "main" }}
+    <div class="archive {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
+        <ul class="list-with-title">
+            {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+            {{ if eq "categories" $taxonomyname }}
+              {{ range $key, $value := $taxonomy }}
+                <div class="listing-title">{{ replace $key "-" " " | title}}</div>
+                {{ range .Pages }}
+                    <ul class="listing">
+                        <div class="listing-item">
+                            <div class="listing-post"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+                                <div class="post-time"><span class="date">{{ if isset .Site.Params "listdateformat" }} 
+                                                                            {{ .Date.Format .Site.Params.listDateFormat }}
+                                                                            {{ else }} {{.Date.Format "Jan 2"}} 
+                                                                            {{ end }}</span></div>
+                            </div>
+                        </div>
+                    </ul>
+                {{ end }}
+            {{ end }}
+            {{ end }}
+            {{ end }}
+        </ul>
+    </div>
+{{ end }}
