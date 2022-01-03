@@ -103,7 +103,7 @@ url = "mailto:aschneiderb4@gmail.com"
 
 [[deployment.targets]]
 name = "andrew-schneider.com"
-URL = "s3://http://andrew-schneider.com.s3-website-us-east-1.amazonaws.com"
+URL = "s3://www.andrew-schneider.com?region=us-east-1"
 
 # If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
 cloudFrontDistributionID =	"<your cloud fornt ID>"
