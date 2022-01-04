@@ -30,7 +30,7 @@ profilePicture = "images/profile.jpg"
 customCss = []
 # example ["js/custom.js"]
 customJs = [] 
-doNotLoadAnimations = false
+doNotLoadAnimations = true
 images = ["images/site-feature-image.png"]
 mainSections = [""]
 # Form Spree Contact Form
