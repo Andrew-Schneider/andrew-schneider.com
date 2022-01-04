@@ -36,3 +36,9 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{secrets.AWSACCESS}}
           AWS_SECRET_ACCESS_KEY: ${{secrets.AWSSECRET}}
+          
+      - name: Clear Cloudflare Cache
+        uses: jakejarvis/cloudflare-purge-action@v0.3.0
+        env:
+          CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
+          CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}

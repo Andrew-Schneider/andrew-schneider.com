@@ -1,5 +1,5 @@
 DefaultContentLanguage = "en"
-baseURL = "http://andrew-schneider.com"
+baseURL = "https://www.andrew-schneider.com"
 enableEmoji = true
 enableRobotsTXT = true
 languageCode = "en"
@@ -103,7 +103,7 @@ url = "mailto:aschneiderb4@gmail.com"
 
 [[deployment.targets]]
 name = "andrew-schneider.com"
-URL = "s3://andrew-schneider.com?region=us-east-1"
+URL = "s3://www.andrew-schneider.com?region=us-east-1"
 
 # If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
 # cloudFrontDistributionID =	"<your cloud fornt ID>"
