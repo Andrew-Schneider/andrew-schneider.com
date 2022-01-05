@@ -75,29 +75,35 @@ url = "mailto:aschneiderb4@gmail.com"
 [menu]
 
   [[menu.main]]
-  name = "Home"
-  identifier = "home"
+  name = "About Me"
+  identifier = "About Me"
   weight = 100
   url = "/"
 
-  [[menu.main]]
+ [[menu.main]]
   name = "Posts"
   weight = 200
-  identifier = "posts"
-  url = "/post/"
+  identifier = "Posts"
+  url = "/posts/"
 
   [[menu.main]]
-  name = "About"
-  weight = 300
-  identifier = "about"
-  url = "/about/"
-
+  name = "Projects"
+  weight = 250
+  identifier = "Projects"
+  url = "/projects/"
+  
   [[menu.main]]
   name = "Contact"
-  weight = 400
+  weight = 300
   identifier = "contact"
   url = "/contact/"
 
+  [[menu.main]]
+  name = "Archives"
+  weight = 400
+  identifier = "archives"
+  url = "/archives/"
+  
 # Deployment
 [deployment]
 

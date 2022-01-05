@@ -1,0 +1,9 @@
+{{- $id := .Get "id" | default (.Get 0) -}}
+{{- $width := .Get "width" | default 70 -}}
+
+<div class="center">
+    <div style="width:{{$width}}%;aspect-ratio:1.33">
+        <iframe src="https://myhub.autodesk360.com/gmail452530/shares/public/{{$id}}?mode=embed" style="width: 100%;height: 100%;" allowfullscreen="true"
+            webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe>
+    </div>
+</div>
