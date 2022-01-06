@@ -62,6 +62,7 @@ html[data-theme='nord-dark'] {
   --blockquote-border-color: #434C5E;
   --link-color: #88C0D0;
   --clicked-link-color: #5E81AC;
+  --swiper-theme-color: #88C0D0;
 }
 
 html {
@@ -86,7 +87,7 @@ p {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--link-color);
 }
 
@@ -244,7 +245,7 @@ header .nav__list a {
 }
 
 header .nav__list a:hover {
-  color: #2660ab;
+  color: var(--link-color);
 }
 
 header .nav__list a.current {
@@ -374,6 +375,7 @@ Language Switch
   background-color: var(--bg-color);
   height: 100%;
   left: 0;
+
   z-index: 4;
   border-right: 1px solid var(--border-color);
 }
@@ -399,7 +401,7 @@ Language Switch
 }
 
 .sidebar .logo-title .title h3 {
-  text-transform: uppercase;
+  text-transform: none;
   font-size: 2.2rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -419,6 +421,7 @@ Language Switch
   padding: 0;
   font-size: 1.4rem;
   text-align: center;
+
 }
 
 .sidebar .social-links i {
@@ -426,7 +429,7 @@ Language Switch
 }
 
 .sidebar .social-links li {
-  display: inline;
+  display: inline-block;
   padding: 0 4px;
   line-height: 0;
 }
@@ -436,7 +439,7 @@ Language Switch
 }
 
 .sidebar .social-links a:hover {
-  color: #2660ab;
+  color: var(--link-color);
 }
 
 .post {
@@ -445,14 +448,18 @@ Language Switch
 }
 
 .post .post-title h1 {
-  text-transform: uppercase;
+  text-transform: none;
   font-size: 3em;
   letter-spacing: 1px;
   line-height: 1;
+  display: inline-block;
+  font-weight: 600;
+  color: var(--heading-color);
+  
 }
 
 .post .post-title h2 {
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 1px;
   font-size: 2.6rem;
   line-height: 1;
@@ -461,7 +468,7 @@ Language Switch
 }
 
 .post .post-title h3 {
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 1px;
   line-height: 1;
   font-weight: 600;
@@ -526,7 +533,7 @@ Language Switch
 .post .post-footer .meta {
   max-width: 100%;
   display: flex;
-  color: #bbbbbb;
+  color: #a0a4ac;
 }
 
 .post .post-footer .meta .info {
@@ -582,7 +589,7 @@ Language Switch
 }
 
 .post .post-footer .meta a:hover {
-  color: #2660ab;
+  color: var(--link-color);
 }
 
 .post .post-footer .meta i {
@@ -706,11 +713,11 @@ Language Switch
 }
 
 .footer a {
-  color: #a6a6a6;
+  color: #a0a4ac;
 }
 
 .footer a:hover {
-  color: #2660ab;
+  color: var(--link-color);
 }
 
 .footer__list {
@@ -743,7 +750,7 @@ Language Switch
 
 .list-with-title .listing-title {
   font-size: 2.4rem;
-  color: #666666;
+  color: #D8DEE9;
   font-weight: 600;
   line-height: 2.2em;
 }
@@ -761,17 +768,17 @@ Language Switch
   display: inline-block;
   max-width: 10%;
   text-align: right;
-  color: #c5c5c5;
+  color: #D8DEE9;
 }
 
 .list-with-title .listing .listing-post a {
-  color: #8f8f8f;
+  color: #D8DEE9;
   width: 90%;
   display: inline-block;
 }
 
 .list-with-title .listing .listing-post a:hover {
-  color: #2660ab;
+  color: var(--link-color);
 }
 
 /* share */
@@ -784,7 +791,7 @@ Language Switch
   width: 32px;
   height: 32px;
   border-radius: 300px;
-  background-color: #3e3e3e;
+  background-color: #3B4252;
   margin-right: 5px;
 }
 
@@ -795,7 +802,7 @@ Language Switch
 }
 
 .evernote a:hover {
-  color: #ed6243;
+  color: #BF616A;
   padding: 11px;
 }
 
@@ -803,17 +810,17 @@ Language Switch
   width: 32px;
   height: 32px;
   border-radius: 300px;
-  background-color: #ed6243;
+  background-color: #BF616A;
   margin-right: 5px;
 }
 
 .weibo a {
-  color: #fff;
+  color: #ECEFF4;
   padding: 9px;
 }
 
 .weibo a:hover {
-  color: #bd4226;
+  color: #BF616A;
 }
 
 .twitter {
@@ -825,12 +832,12 @@ Language Switch
 }
 
 .twitter a {
-  color: #fff;
+  color: #ECEFF4;
   padding: 9px;
 }
 
 .twitter a:hover {
-  color: #4b9ece;
+  color: #4B9ECE;
 }
 
 /* about */
@@ -886,7 +893,7 @@ Language Switch
 
 /* Buttons */
 a.btn {
-  color: #868686;
+  color: #a0a4ac;
   font-weight: 400;
 }
 
@@ -912,13 +919,13 @@ a.btn {
   display: inline-block;
   position: relative;
   outline: 0px;
-  color: #464545;
+  color: #4C566A;
   background: transparent;
   font-size: 1.4rem;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid #464545;
+  border: 1px solid #4C566A;
   white-space: nowrap;
   font-weight: 400;
   font-style: normal;
@@ -1031,8 +1038,8 @@ a.btn {
   position: relative;
   padding: 0.5em 1.25em;
   outline: 0;
-  color: #fff;
-  background: #3cbd10;
+  color: #ECEFF4;
+  background: #A3BE8C;
   font-size: 1.4rem;
   text-align: center;
   text-decoration: none;
@@ -1295,7 +1302,7 @@ a.btn {
     line-height: 2.5;
     padding: 0.5rem 0.75rem;
     position: relative;
-    text-transform: uppercase;
+    text-transform: none;
     text-align: center;
     font-size: 1.6rem;
   }
