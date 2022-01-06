@@ -1,109 +1,33 @@
-DefaultContentLanguage = "en"
-baseURL = "https://www.andrew-schneider.com"
-enableEmoji = true
-enableRobotsTXT = true
+baseURL = "http://www.andrew-schneider.com"
 languageCode = "en"
-summarylength = 10
+DefaultContentLanguage = "en"
 title = "Andrew Schneider"
 theme = "anatole"
+summarylength = 10
+enableEmoji = true
+enableRobotsTXT = true
 
 # Enable Disqus
-# disqusShortname = ""
+#disqusShortname = ""
 
 # Google Analytics
-# googleAnalytics = ""
+#googleAnalytics = "UA-123-45"
 
 # Syntax highlighting
-pygmentsUseClasses = true
+pygmentsUseClasses = true   
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 
-[params]
-author = "andrew schneider"
-title = "Andrew Schneider"
-# copyright = "2022-2023"
-description = "Making, Tinkering, and Studying"
-favicon = "favicons/"
-keywords = ""
-profilePicture = "images/profile.jpg"
-# example ["css/custom.css"]
-customCss = []
-# example ["js/custom.js"]
-customJs = [] 
-doNotLoadAnimations = true
-images = ["images/site-feature-image.png"]
-mainSections = [""]
-# Form Spree Contact Form
-# Google Site Verify
-# googleSiteVerify = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-# indexDateFormat = "Mon, Jan 2, 2006"
-listDateFormat = "Jan, 2006"
-# singleDateFormat = "Mon, Jan 2, 2006"
-# Commento Comments
-# CommentoURL = "https://commento.example.com/js/commento.js"
-disableThemeSwitcher = true
-displayMode = "nord-dark"
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+        unsafe=true
 
-[params.simpleAnalytics]
-# enable = true
-# customurl = "https://analytics.example.com"
+[taxonomies]
+    category = "categories"
+    series = "series"
+    tag = "tags"
 
-## Math settings
-[params.math]
-enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
-use = "katex"  # options: "katex", "mathjax". default is "katex".
-
-## Social links
-# use 'fab' when brand icons, use 'fas' when standard solid icons.
-[[params.socialIcons]]
-icon = "fab fa-linkedin"
-title = "Linkedin"
-url = "https://www.linkedin.com/in/andrew-schneider/"
-
-[[params.socialIcons]]
-icon = "fab fa-github"
-title = "GitHub"
-url = "https://github.com/Andrew-Schneider"
-
-[[params.socialIcons]]
-icon = "fas fa-envelope"
-title = "e-mail"
-url = "mailto:aschneiderb4@gmail.com"
-
-## Menu items
-
-[menu]
-
-  [[menu.main]]
-  name = "About Me"
-  identifier = "About Me"
-  weight = 100
-  url = "/"
-
- [[menu.main]]
-  name = "Posts"
-  weight = 200
-  identifier = "Posts"
-  url = "/posts/"
-
-  [[menu.main]]
-  name = "Projects"
-  weight = 250
-  identifier = "Projects"
-  url = "/projects/"
-  
-  [[menu.main]]
-  name = "Contact"
-  weight = 300
-  identifier = "contact"
-  url = "/contact/"
-
-  [[menu.main]]
-  name = "Archives"
-  weight = 400
-  identifier = "archives"
-  url = "/archives/"
-  
 # Deployment
 [deployment]
 
@@ -123,3 +47,119 @@ gzip = true
 [[deployment.matchers]]
 pattern = "^.+\\.(html|xml|json)$"
 gzip = true
+
+[en]
+title = "My blog"
+weight = 1
+LanguageName = "EN"
+contentDir = "content/english"
+
+[ar]
+title = "فلانة الفلانية"
+description = "أنا أعمل كمطورة ويب في شركة س"
+contentDir = "content/arabic" 
+weight = 2
+LanguageDirection = "rtl" 
+LanguageName = "AR"
+
+
+title = "Andrew Schneider"
+author = "andrew schneider"
+#copyright = "2021-2022"
+description = "Making, Tinkering, and Studying"
+profilePicture = "images/profile.jpg"
+keywords = ""
+favicon = "favicons/"
+# example ["css/custom.css"]
+customCss = []
+# example ["js/custom.js"]
+customJs = [] 
+mainSections = []
+images = ["images/site-feature-image.png"]
+doNotLoadAnimations = true
+# Form Spree Contact Form
+# contactFormAction = "https://formspree.io/f/your-form-hash-here"
+# Google Fonts
+# googleFonts = ["Indie+Flower", "Roboto:ital,wght@0,100;0,400;0,700;1,400"]
+# Google Site Verify
+# googleSiteVerify = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+singleDateFormat = "2/1/2006"
+indexDateFormat = "2/1/2006"
+listDateFormat = "2/1/2006"
+# Commento Comments
+# CommentoURL = "https://commento.example.com/js/commento.js"
+# Read More links for truncated summaries
+# readMore = true
+# postSectionName = "blog"
+disableThemeSwitcher = true
+displayMode = "nord-dark"
+
+reversepagetitle = true # When set to 'true', the Window Title will be reversed to 'Title | Author' instead of the default 'Author | Title'
+
+[simpleAnalytics]
+# enable = true
+# customurl = "https://analytics.example.com"
+
+## Math settings
+[math]
+enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+use = "katex"  # options: "katex", "mathjax". default is "katex".
+
+## Social links
+# use 'fab' when brand icons, use 'fas' when standard solid icons.
+[[socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/andrew-schneider/"
+
+[[socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/Andrew-Schneider"
+
+[[socialIcons]]
+icon = "fab fa-instagram"
+title = "instagram"
+url = "https://www.instagram.com/"
+
+[[socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:aschneiderb4@gmail.com"
+
+# Menus
+  [[main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[main]]
+  name = "Posts"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
+
+  [[main]]
+  name = "Portfolio"
+  weight = 300
+  identifier = "portfolio"
+  url = "/portfolio/"
+
+  [[main]]
+  name = "About"
+  weight = 400
+  identifier = "about"
+  url = "/about/"
+
+  [[main]]
+  name = "Contact"
+  weight = 500
+  identifier = "contact"
+  url = "/contact/"
+
+  [[footer]]
+  name = "imprint"
+  weight = 1
+  identifier = "imprint"
+  url = "/imprint/"
