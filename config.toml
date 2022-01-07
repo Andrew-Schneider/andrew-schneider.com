@@ -28,21 +28,6 @@ pygmentsCodefencesGuessSyntax = true
     series = "series"
     tag = "tags"
 
-[languages]
-    [en]
-    title = "My blog"
-    weight = 1
-    LanguageName = "EN"
-    contentDir = "content/english"
-
-    [ar]
-    title = "فلانة الفلانية"
-    description = "أنا أعمل كمطورة ويب في شركة س"
-    contentDir = "content/arabic" 
-    weight = 2
-    LanguageDirection = "rtl" 
-    LanguageName = "AR"
-
 [params]
     title = "Andrew Schneider"
     author = "andrew schneider"
@@ -54,8 +39,8 @@ pygmentsCodefencesGuessSyntax = true
     # example ["css/custom.css"]
     customCss = []
     # example ["js/custom.js"]
-    customJs = [] 
-    mainSections = []
+    customJs = []
+    mainSections = [] 
     images = ["images/site-feature-image.png"]
     doNotLoadAnimations = true
     # Form Spree Contact Form
@@ -66,13 +51,13 @@ pygmentsCodefencesGuessSyntax = true
     # googleSiteVerify = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
     singleDateFormat = "2/1/2006"
     indexDateFormat = "2/1/2006"
-    listDateFormat = "2/1/2006"
+    listDateFormat = "Jan, 2006"
     # Commento Comments
     # CommentoURL = "https://commento.example.com/js/commento.js"
     # Read More links for truncated summaries
     # readMore = true
-    # postSectionName = "blog"
-    disableThemeSwitcher = false
+    # postSectionName = "Archive"
+    disableThemeSwitcher = true
     displayMode = 'nord-dark'
     contentratio = 0.7
 
@@ -108,7 +93,7 @@ pygmentsCodefencesGuessSyntax = true
 
 [menu]
   [[menu.main]]
-  name = "Home"
+  name = "About Me"
   identifier = "home"
   weight = 100
   url = "/"
@@ -120,16 +105,16 @@ pygmentsCodefencesGuessSyntax = true
   url = "/post/"
 
   [[menu.main]]
-  name = "Portfolio"
-  weight = 300
-  identifier = "portfolio"
-  url = "/portfolio/"
+  name = "Journal"
+  weight = 350
+  identifier = "journal"
+  url = "/journal/"
 
   [[menu.main]]
-  name = "About"
+  identifier = "blog"
+  name = "blog"
+  url = "/blog/"
   weight = 400
-  identifier = "about"
-  url = "/about/"
 
   [[menu.main]]
   name = "Contact"

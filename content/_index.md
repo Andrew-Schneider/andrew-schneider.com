@@ -1,25 +1,13 @@
 +++
-author = "Hugo Authors"
+author = "Andrew Schneider"
 +++
+## Hello
+I'm Andrew. I'm a second year student studying Mechanical Engineering at Georgia Tech. I'm focused on mechanical design, specifically in regard to robotics and in my free time I like to do archery, read, and fail to catch up on my sleep.
 
-<!--
-This file is left intentionally empty by default to be backwards compatible with the initial theme setup.
+# 2020
 
-Although the theme has advanced a little bit and it now allows to specify the content on the main page (even if the list of posts/articles is not intended).
-This can be:
-- with the list of posts/articles (default: `mainSections = ["post"]) or
-- without the list of posts/articles (by setting `mainSections = [""]`)
+{{/< fusion SH35dfcQT936092f0e43740d08d36533daf2 >}}
 
-Markdown supported, ie:
+# 2019
 
-```
-# Welcome
-
-- Hugo :rocket:
-- Hugo theme :rocket:
-
-Don't forget to check the README.md file!
-```
-
-Remember that you can also specify a section header for the posts below by configuring the `mainSectionsTitle` parameter in the front matter of this file.
--->
+{{/< fusion SH35dfcQT936092f0e43c1d1d6a7003b29d4 >}}

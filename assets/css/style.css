@@ -451,11 +451,10 @@ Language Switch
   text-transform: none;
   font-size: 3em;
   letter-spacing: 1px;
-  line-height: 1;
+  line-height: 0;
   display: inline-block;
   font-weight: 600;
   color: var(--heading-color);
-  
 }
 
 .post .post-title h2 {

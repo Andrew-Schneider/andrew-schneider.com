@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+{{ range where .Site.RegularPages "Type" "projects" }}
+<div class="post {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
+    <div class="post-title">
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h3>
+        <hr>
+    </div>
+    <div class="post-content">
+        <div class="p_part">
+            {{ if isset .Params "summary"}} {{ .Summary }} {{else}} {{.Description}} {{end}}
+            
+        </div>
+    </div>
+    <div class="post-footer">
+        <div class="meta">
+            <div class="info">
+                <em class="fas fa-calendar-day"></em>
+                <span class="date">{{ if isset .Site.Params "indexdateformat" }}
+                    {{ .Date.Format .Site.Params.indexDateFormat }}
+                    {{ else }} {{.Date.Format "Mon, Jan 2, 2006"}}
+                    {{ end }}</span>
+                {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
+                {{ with .Params.tags }}
+                {{- range $index, $el := . -}}
+                <a class="tag" href="{{ ( printf " tags/%s/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>
+                {{- end -}}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ end }}
+{{ end }}
