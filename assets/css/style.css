@@ -3,7 +3,7 @@
 :root {
   --bg-color: #fff;
   --secondary-bg-color: #eeeeee;
-  --heading-color: #464646;
+  --heading-color: #5f5f5f;
   --body-color: rgba(0, 0, 0, 0.7);
   --post-color: rgba(0, 0, 0, 0.44);
   --border-color: rgba(0, 0, 0, 0.15);
@@ -87,7 +87,7 @@ p {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--link-color);
 }
 
@@ -245,7 +245,7 @@ header .nav__list a {
 }
 
 header .nav__list a:hover {
-  color: var(--link-color);
+  color: #2660ab;
 }
 
 header .nav__list a.current {
@@ -375,7 +375,6 @@ Language Switch
   background-color: var(--bg-color);
   height: 100%;
   left: 0;
-
   z-index: 4;
   border-right: 1px solid var(--border-color);
 }
@@ -401,7 +400,7 @@ Language Switch
 }
 
 .sidebar .logo-title .title h3 {
-  text-transform: none;
+  text-transform: uppercase;
   font-size: 2.2rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -421,7 +420,6 @@ Language Switch
   padding: 0;
   font-size: 1.4rem;
   text-align: center;
-
 }
 
 .sidebar .social-links i {
@@ -429,7 +427,7 @@ Language Switch
 }
 
 .sidebar .social-links li {
-  display: inline-block;
+  display: inline;
   padding: 0 4px;
   line-height: 0;
 }
@@ -439,7 +437,7 @@ Language Switch
 }
 
 .sidebar .social-links a:hover {
-  color: var(--link-color);
+  color: #2660ab;
 }
 
 .post {
@@ -448,17 +446,14 @@ Language Switch
 }
 
 .post .post-title h1 {
-  text-transform: none;
+  text-transform: uppercase;
   font-size: 3em;
   letter-spacing: 1px;
-  line-height: 0;
-  display: inline-block;
-  font-weight: 600;
-  color: var(--heading-color);
+  line-height: 1;
 }
 
 .post .post-title h2 {
-  text-transform: none;
+  text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 2.6rem;
   line-height: 1;
@@ -467,7 +462,7 @@ Language Switch
 }
 
 .post .post-title h3 {
-  text-transform: none;
+  text-transform: uppercase;
   letter-spacing: 1px;
   line-height: 1;
   font-weight: 600;
@@ -532,7 +527,7 @@ Language Switch
 .post .post-footer .meta {
   max-width: 100%;
   display: flex;
-  color: #a0a4ac;
+  color: #bbbbbb;
 }
 
 .post .post-footer .meta .info {
@@ -588,7 +583,7 @@ Language Switch
 }
 
 .post .post-footer .meta a:hover {
-  color: var(--link-color);
+  color: #2660ab;
 }
 
 .post .post-footer .meta i {
@@ -712,11 +707,11 @@ Language Switch
 }
 
 .footer a {
-  color: #a0a4ac;
+  color: #a6a6a6;
 }
 
 .footer a:hover {
-  color: var(--link-color);
+  color: #2660ab;
 }
 
 .footer__list {
@@ -749,7 +744,7 @@ Language Switch
 
 .list-with-title .listing-title {
   font-size: 2.4rem;
-  color: #D8DEE9;
+  color: #666666;
   font-weight: 600;
   line-height: 2.2em;
 }
@@ -767,17 +762,17 @@ Language Switch
   display: inline-block;
   max-width: 10%;
   text-align: right;
-  color: #D8DEE9;
+  color: #c5c5c5;
 }
 
 .list-with-title .listing .listing-post a {
-  color: #D8DEE9;
+  color: #8f8f8f;
   width: 90%;
   display: inline-block;
 }
 
 .list-with-title .listing .listing-post a:hover {
-  color: var(--link-color);
+  color: #2660ab;
 }
 
 /* share */
@@ -790,7 +785,7 @@ Language Switch
   width: 32px;
   height: 32px;
   border-radius: 300px;
-  background-color: #3B4252;
+  background-color: #3e3e3e;
   margin-right: 5px;
 }
 
@@ -801,7 +796,7 @@ Language Switch
 }
 
 .evernote a:hover {
-  color: #BF616A;
+  color: #ed6243;
   padding: 11px;
 }
 
@@ -809,17 +804,17 @@ Language Switch
   width: 32px;
   height: 32px;
   border-radius: 300px;
-  background-color: #BF616A;
+  background-color: #ed6243;
   margin-right: 5px;
 }
 
 .weibo a {
-  color: #ECEFF4;
+  color: #fff;
   padding: 9px;
 }
 
 .weibo a:hover {
-  color: #BF616A;
+  color: #bd4226;
 }
 
 .twitter {
@@ -831,12 +826,12 @@ Language Switch
 }
 
 .twitter a {
-  color: #ECEFF4;
+  color: #fff;
   padding: 9px;
 }
 
 .twitter a:hover {
-  color: #4B9ECE;
+  color: #4b9ece;
 }
 
 /* about */
@@ -892,7 +887,7 @@ Language Switch
 
 /* Buttons */
 a.btn {
-  color: #a0a4ac;
+  color: #868686;
   font-weight: 400;
 }
 
@@ -918,13 +913,13 @@ a.btn {
   display: inline-block;
   position: relative;
   outline: 0px;
-  color: #4C566A;
+  color: #464545;
   background: transparent;
   font-size: 1.4rem;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid #4C566A;
+  border: 1px solid #464545;
   white-space: nowrap;
   font-weight: 400;
   font-style: normal;
@@ -1037,8 +1032,8 @@ a.btn {
   position: relative;
   padding: 0.5em 1.25em;
   outline: 0;
-  color: #ECEFF4;
-  background: #A3BE8C;
+  color: #fff;
+  background: #3cbd10;
   font-size: 1.4rem;
   text-align: center;
   text-decoration: none;
@@ -1301,7 +1296,7 @@ a.btn {
     line-height: 2.5;
     padding: 0.5rem 0.75rem;
     position: relative;
-    text-transform: none;
+    text-transform: uppercase;
     text-align: center;
     font-size: 1.6rem;
   }

@@ -31,7 +31,7 @@ pygmentsCodefencesGuessSyntax = true
 [params]
     title = "Andrew Schneider"
     author = "andrew schneider"
-    #copyright = "2021-2022"
+    copyright = "2021-{{ YEAR }}"
     description = "Making, Tinkering, and Studying"
     profilePicture = "images/profile.jpg"
     keywords = ""
@@ -99,21 +99,9 @@ pygmentsCodefencesGuessSyntax = true
   url = "/"
 
   [[menu.main]]
-  name = "Posts"
-  weight = 200
-  identifier = "posts"
-  url = "/post/"
-
-  [[menu.main]]
-  name = "Journal"
-  weight = 350
-  identifier = "journal"
-  url = "/journal/"
-
-  [[menu.main]]
-  identifier = "blog"
-  name = "blog"
-  url = "/blog/"
+  identifier = "Projects"
+  name = "Projects"
+  url = "/Projects/"
   weight = 400
 
   [[menu.main]]
@@ -121,12 +109,6 @@ pygmentsCodefencesGuessSyntax = true
   weight = 500
   identifier = "contact"
   url = "/contact/"
-
-  [[menu.footer]]
-  name = "imprint"
-  weight = 1
-  identifier = "imprint"
-  url = "/imprint/"
 
 # Deployment
     [deployment]
