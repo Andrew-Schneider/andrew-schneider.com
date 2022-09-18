@@ -59,7 +59,7 @@ localizedDates = false
     # customCss = ["css/style.css"]
     # example ["js/custom.js"]
     customJs = []
-    mainSections = [] 
+    mainSections = ["post"] 
     images = ["images/site-feature-image.png"]
     doNotLoadAnimations = true
     # Form Spree Contact Form
@@ -76,7 +76,7 @@ localizedDates = false
     # CommentoURL = "https://commento.example.com/js/commento.js"
     # Read More links for truncated summaries
     # readMore = true
-    postSectionName = "blog"
+    # postSectionName = "posts"
     # relatedPosts = true
     # numberOfRelatedPosts = 3
     disableThemeSwitcher = false
@@ -127,26 +127,51 @@ localizedDates = false
 
 [menu]
   [[menu.main]]
-  name = "About Me"
+  name = "home"
   identifier = "home"
   weight = 100
   url = "/"
 
-    [[menu.main]]
-  name = "blog"
-  identifier = "blog"
+  [[menu.main]]
+  identifier = "About Me"
+  name = "About"
+  url = "/About/"
   weight = 200
-  url = "/blog/"
+
+  ## [[menu.main]]
+  # name = "Portfolio"
+  # weight = 300
+  # identifier = "portfolio"
+  # url = "/portfolio/"
 
   [[menu.main]]
-  identifier = "Projects"
-  name = "Projects"
-  url = "/Projects/"
+  identifier = "Archive"
+  name = "Archive"
+  url = "/post/"
   weight = 400
 
   [[menu.main]]
-  name = "Contact"
+  name = "Accomplishments"
   weight = 500
+  identifier = "accomplishments"
+
+  [[menu.main]]
+  name = "Awards"
+  weight = 510
+  identifier = "awards"
+  url = "/awards/"
+  parent = "accomplishments"  
+
+  [[menu.main]]
+  name = "Certifications"
+  weight = 520
+  identifier = "certifications"
+  url = "/certifications/"
+  parent = "accomplishments"
+
+  [[menu.main]]
+  name = "Contact"
+  weight = 600
   identifier = "contact"
   url = "/contact/"
 
