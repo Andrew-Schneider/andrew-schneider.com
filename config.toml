@@ -134,4 +134,4 @@ pygmentsCodefencesGuessSyntax = true
   # replacements = "github.com/lxndrblz/anatole -> ../../anatole"
   [[module.imports]]
     path = "github.com/lxndrblz/anatole"
-    disable = true
+    disable = false
