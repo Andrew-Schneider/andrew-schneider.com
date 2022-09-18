@@ -25,6 +25,19 @@ $themes: (
     warning: $warning,
     danger: $danger,
   ),
+  nord: (
+    accent: $accent--nord,
+    primary: $primary--nord,
+    primary-light: $primary-light--nord,
+    primary-lighter: $primary-lighter--nord,
+    info: $info,
+    shadow: $shadow--nord,
+    border: 1px solid $primary-lighter--nord,
+    alert: $warning,
+    success: $success,
+    warning: $warning,
+    danger: $danger,
+  ),
 );
 
 $theme-map: ();

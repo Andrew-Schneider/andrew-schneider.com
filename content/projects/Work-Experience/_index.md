@@ -1,6 +1,6 @@
 ---
 aliases: ["posts", "articles", "blog", "showcase", "docs"]
-title: "Projects"
+title: "Work Experience"
 author: "Hugo Authors"
 tags: ["index"]
 header: ""

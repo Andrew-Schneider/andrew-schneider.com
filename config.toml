@@ -2,7 +2,12 @@ baseURL = "http://www.andrew-schneider.com"
 languageCode = "en"
 DefaultContentLanguage = "en"
 title = "Andrew Schneider"
-theme = "anatole"
+
+# theme as hugo module
+theme = "github.com/lxndrblz/anatole"
+# theme as git submodule
+# theme = "anatole"
+
 summarylength = 10
 enableEmoji = true
 enableRobotsTXT = true
@@ -18,6 +23,9 @@ pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 
+# Localized dates requires Hugo version 0.87.0
+localizedDates = false
+
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]
@@ -28,6 +36,17 @@ pygmentsCodefencesGuessSyntax = true
     series = "series"
     tag = "tags"
 
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+[[related.indices]]
+  name = 'keywords'
+    weight = 100
+[[related.indices]]
+  name = 'tags'
+  weight = 80
+
 [params]
     title = "Andrew Schneider"
     author = "andrew schneider"
@@ -37,18 +56,21 @@ pygmentsCodefencesGuessSyntax = true
     keywords = ""
     favicon = "favicons/"
     # example ["css/custom.css"]
-    customCss = []
+    # customCss = ["css/style.css"]
     # example ["js/custom.js"]
     customJs = []
+    # example ["scss/custom.js"]
+    customscss = ["scss/_variables.scss"]
     mainSections = [] 
     images = ["images/site-feature-image.png"]
     doNotLoadAnimations = true
     # Form Spree Contact Form
-    # contactFormAction = "https://formspree.io/f/your-form-hash-here"
+    #contactFormAction = "https://formspree.io/f/your-form-hash-here"
+    #contactFormReCaptcha = "your-site-key-here"
     # Google Fonts
-    # googleFonts = ["Indie+Flower", "Roboto:ital,wght@0,100;0,400;0,700;1,400"]
+   #googleFonts = ["Indie+Flower", "Roboto:ital,wght@0,100;0,400;0,700;1,400"]
     # Google Site Verify
-    # googleSiteVerify = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    #googleSiteVerify = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
     singleDateFormat = "2/1/2006"
     indexDateFormat = "2/1/2006"
     listDateFormat = "Jan, 2006"
@@ -56,16 +78,27 @@ pygmentsCodefencesGuessSyntax = true
     # CommentoURL = "https://commento.example.com/js/commento.js"
     # Read More links for truncated summaries
     # readMore = true
-    # postSectionName = "Archive"
-    disableThemeSwitcher = true
-    displayMode = 'nord-dark'
+    postSectionName = "blog"
+    # relatedPosts = true
+    # numberOfRelatedPosts = 3
+    disableThemeSwitcher = false
+    displayMode = 'lightmode'
     contentratio = 0.7
 
     reversepagetitle = true # When set to 'true', the Window Title will be reversed to 'Title | Author' instead of the default 'Author | Title'
 
+# hidesidebar = true
 [simpleAnalytics]
     # enable = true
     # customurl = "https://analytics.example.com"
+
+[plausibleAnalytics]
+# domain = "example.com"
+# serverURL = "https://analytics.example.com"
+
+[umami]
+# serverURL = "example.com"
+# id = "94db1cb1-74f4-4a40-ad6c-962362670409"
 
 ## Math settings
     [math]
@@ -88,6 +121,9 @@ pygmentsCodefencesGuessSyntax = true
     icon = "fas fa-envelope"
     title = "e-mail"
     url = "mailto:aschneiderb4@gmail.com"
+    
+[mermaid]
+# enable = true
 
 ## Menu items
 
@@ -97,6 +133,12 @@ pygmentsCodefencesGuessSyntax = true
   identifier = "home"
   weight = 100
   url = "/"
+
+    [[menu.main]]
+  name = "blog"
+  identifier = "blog"
+  weight = 200
+  url = "/blog/"
 
   [[menu.main]]
   identifier = "Projects"

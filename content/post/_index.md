@@ -1,6 +1,6 @@
 +++
 aliases = ["posts", "articles", "blog", "showcase", "docs"]
-title = "Projects"
+title = "blog"
 author = "Hugo Authors"
 tags = ["index"]
 +++

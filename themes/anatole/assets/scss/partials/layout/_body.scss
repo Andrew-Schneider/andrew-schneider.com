@@ -10,4 +10,8 @@
     color: $primary--lightmode;
     background-color: $accent--lightmode;
   }
+  &.theme--nord {
+    color: $primary--nord;
+    background-color: $accent--nord;
+  }
 }
