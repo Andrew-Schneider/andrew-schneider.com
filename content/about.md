@@ -6,7 +6,7 @@ aliases = ["about-me"]
 author = "Andrew Schneider"
 +++
 
-{{% notice update %}}
+{{% notice info %}}
 **Site Build Out in Progress**
 {{% /notice %}}
 

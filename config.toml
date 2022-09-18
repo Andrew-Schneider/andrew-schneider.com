@@ -56,7 +56,7 @@ localizedDates = false
     keywords = ""
     favicon = "favicons/"
     # example ["css/custom.css"]
-    # customCss = ["css/style.css"]
+    customCss = []
     # example ["js/custom.js"]
     customJs = []
     mainSections = ["post"] 
