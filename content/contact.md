@@ -6,6 +6,6 @@ description: Contact Page
 contact: true
 ---
 
-{{% notice update %}}
+{{< notice update >}}
 **Site Build Out in Progress**
-{{% /notice %}}
+{{< /notice >}}

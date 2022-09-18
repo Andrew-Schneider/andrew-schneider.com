@@ -6,6 +6,6 @@ aliases = ["awards"]
 author = "Hugo Authors"
 +++
 
-{{% notice info %}}
+{{< notice update >}}
 **Site Build Out in Progress**
-{{% /notice %}}
+{{< /notice >}}

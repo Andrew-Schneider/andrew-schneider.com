@@ -6,14 +6,14 @@ aliases = ["certifications"]
 author = "Andrew"
 +++
 
-{{% notice info %}}
+{{< notice update >}}
 **Site Build Out in Progress**
-{{% /notice %}}
+{{< /notice >}}
+
 
 ## Certifications
 
 1. [CSWA Exam](https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-WEM63S2XJH)
 
-https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-WEM63S2XJH
+{{< figure src="/images/cswa.png" title="Certified Solidworks Associate" width="60%" link="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-WEM63S2XJH" >}}
 
-{{< figure src="/images/cswa.png" title="Certified Solidworks Associate" width="50%" link="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-WEM63S2XJH" >}}
