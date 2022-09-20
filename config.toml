@@ -59,7 +59,7 @@ localizedDates = false
     customCss = []
     # example ["js/custom.js"]
     customJs = []
-    mainSections = ["post"] 
+    mainSections = ["Post"] 
     images = ["images/site-feature-image.png"]
     doNotLoadAnimations = true
     # Form Spree Contact Form
@@ -76,7 +76,7 @@ localizedDates = false
     # CommentoURL = "https://commento.example.com/js/commento.js"
     # Read More links for truncated summaries
     # readMore = true
-    # postSectionName = "posts"
+    # postSectionName = "Post"
     # relatedPosts = true
     # numberOfRelatedPosts = 3
     disableThemeSwitcher = false
@@ -141,13 +141,13 @@ localizedDates = false
   ## [[menu.main]]
   # name = "Portfolio"
   # weight = 300
-  # identifier = "portfolio"
+  # identifier = "Portfolio"
   # url = "/portfolio/"
 
   [[menu.main]]
   identifier = "Archive"
   name = "Archive"
-  url = "/post/"
+  url = "/Post/"
   weight = 400
 
   [[menu.main]]
