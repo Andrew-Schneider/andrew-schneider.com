@@ -3,4 +3,7 @@
 author = "Andrew Schneider"
 
 +++
-# Site build out in progress
+
+{{< notice update >}}
+**Site Build Out in Progress**
+{{< /notice >}}

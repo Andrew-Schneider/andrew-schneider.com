@@ -1,6 +1,6 @@
 ---
 title: "ME 2110 Robotics Competition"
-date: 2022-01-05T14:47:41+00:00
+date: 2022-05-01T14:47:41+00:00
 description: "College Robotics Competition Course"
 tags: 
   - Robots

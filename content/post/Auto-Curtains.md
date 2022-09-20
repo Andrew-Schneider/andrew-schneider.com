@@ -1,6 +1,6 @@
 ---
 title: "Auto-Curtains"
-date: 2022-01-07T14:47:41+00:00
+date: 2022-07-01T14:47:41+00:00
 description: "Motorised window curtains"
 tags: 
   - Electronics
