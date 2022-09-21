@@ -147,7 +147,7 @@ localizedDates = false
   [[menu.main]]
   identifier = "Archive"
   name = "Archive"
-  url = "/Archive/"
+  url = "/post/"
   weight = 400
 
   [[menu.main]]
