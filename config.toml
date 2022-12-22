@@ -49,7 +49,7 @@ localizedDates = false
 
 [params]
     title = "Andrew Schneider"
-    author = "andrew schneider"
+    author = "Andrew schneider"
     copyright = "2021-{{ YEAR }}"
     description = "Making, Tinkering, and Studying"
     profilePicture = "images/profile.jpg"
